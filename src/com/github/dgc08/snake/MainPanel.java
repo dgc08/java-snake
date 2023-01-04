@@ -11,8 +11,8 @@ import java.awt.event.ActionListener;
 public class MainPanel extends JPanel implements ActionListener {
     //ATTR
 
-    public static final Image apple = new ImageIcon("Resources/apple.png").getImage();
-    private static final Image snake = new ImageIcon("Resources/dot.png").getImage();
+    public static Image apple = null;
+    private static Image snake = null;
 
     private int tail_amount;
 
@@ -40,25 +40,23 @@ public class MainPanel extends JPanel implements ActionListener {
         }
 
         gameIsRunning = true;
+        t.start();
         spawnApple();
-    }
-    private void initGame(boolean start) {
-        if (start) {
-            t.start();
-        }
-        initGame();
     }
 
     public MainPanel() {
+        apple = new ImageIcon(getClass().getResource("resources/apple.png")).getImage();
+        snake = new ImageIcon(getClass().getResource("resources/dot.png")).getImage();
+
         addKeyListener(new getDirection());
-        setPreferredSize(new Dimension(Util.WIDTH, Util.LENGTH));
+        setPreferredSize(new Dimension(Util.WIDTH, Util.LENGTH + 30)); // + 30 Becuse of Menu Bar
 
         setFocusable(true);
         setBackground(Color.DARK_GRAY );
 
-        t = new Timer(120, this);
+        t = new Timer(Util.difficulty, this);
         
-        initGame(true);
+        initGame();
     }
 
     private void spawnApple() {
@@ -127,7 +125,8 @@ public class MainPanel extends JPanel implements ActionListener {
             g.setColor(Color.WHITE);
             g.setFont(f);
 
-            g.drawString(Util.gameOverMessage, (Util.WIDTH - (metrics.stringWidth(Util.gameOverMessage) )) / 2, Util.LENGTH/2);
+            g.drawString(Util.gameOverMessage, (Util.WIDTH - (metrics.stringWidth(Util.gameOverMessage) )) / 2, Util.LENGTH/4);
+            g.drawString(Util.restartHelper, (Util.WIDTH - (metrics.stringWidth(Util.restartHelper) )) / 2, Util.LENGTH/2);
         }
     }
 

@@ -20,7 +20,7 @@ class FileMenu{
             });
         }
     };
-    private static JMenuItem aboutItem = new JMenuItem("About the Program") {
+    private static JMenuItem aboutItem = new JMenuItem("About the Game") {
         {
             addActionListener(new Author());
         }
