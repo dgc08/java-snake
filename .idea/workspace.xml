@@ -6,19 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d481cb5-c50e-434f-bd90-947c60c0f464" name="Changes" comment="Bug fixes, Recource Management, Design Changes">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/apple.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/resources/apple.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/dot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/resources/dot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-snake/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-snake/Resources/apple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-snake/Resources/dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/dgc08/snake/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/MainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/dgc08/snake/Menu/FileMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/Menu/FileMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/dgc08/snake/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/Util.java" afterDir="false" />
-    </list>
+    <list default="true" id="4d481cb5-c50e-434f-bd90-947c60c0f464" name="Changes" comment="Bug fixes, Recource Management, Design Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -93,11 +93,18 @@ public class MainPanel extends JPanel implements ActionListener {
         }
 
         switch (this.direction) {
-            case NORTH -> y[0] = Util.negMod(y[0] - Util.IMAGE_SIZE, Util.LENGTH);
-            case SOUTH -> y[0] = Util.negMod(y[0] + Util.IMAGE_SIZE, Util.LENGTH);
+            case NORTH :
+                y[0] = Util.negMod(y[0] - Util.IMAGE_SIZE, Util.LENGTH);
+                break;
+            case SOUTH:
+                y[0] = Util.negMod(y[0] + Util.IMAGE_SIZE, Util.LENGTH);
+                break;
 
-            case EAST -> x[0] = Util.negMod(x[0] + Util.IMAGE_SIZE, Util.LENGTH);
-            case WEST -> x[0] = Util.negMod(x[0] - Util.IMAGE_SIZE, Util.LENGTH);
+            case EAST:
+                x[0] = Util.negMod(x[0] + Util.IMAGE_SIZE, Util.LENGTH);
+                break;
+            case WEST:
+                x[0] = Util.negMod(x[0] - Util.IMAGE_SIZE, Util.LENGTH);
         }
 
     }

@@ -25,10 +25,17 @@ public class getDirection implements java.awt.event.KeyListener {
     public static Direction getOpposite(Direction direction) {
         Direction ret = Direction.NONE;
         switch (direction) {
-            case EAST -> ret = Direction.WEST;
-            case WEST -> ret = Direction.EAST;
-            case NORTH -> ret = Direction.SOUTH;
-            case SOUTH -> ret = Direction.NORTH;
+            case EAST:
+                ret = Direction.WEST;
+                break;
+            case WEST:
+                ret = Direction.EAST;
+                break;
+            case NORTH:
+                ret = Direction.SOUTH;
+                break;
+            case SOUTH:
+                ret = Direction.NORTH;
         }
 
         return ret;
