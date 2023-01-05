@@ -1,10 +1,11 @@
 package com.github.dgc08.snake;
 
 public class Util {
-    public static String gameOverMessage = "GAME OVER. Get wrecked Noob :O";
-    public static String restartHelper = "Restart from the File Menu.";
+    public static final String gameOverMessage = "GAME OVER. Get wrecked Noob :O";
+    public static final String restartHelper = "Restart from the Game Menu.";
+    public static final String invalidDifficulty = "That doesn't look like a Number. Try again.";
 
-    public static int difficulty = 120;
+    public static boolean running = true;
 
     public static final int WIDTH = 500;
     public static final int SPAWNER_CONST_WIDTH = WIDTH/10 - 1;
@@ -20,5 +21,17 @@ public class Util {
             return value + max;
         }
         return value;
+    }
+
+    public static boolean isNumeric(String strNum) {
+        if (strNum == null) {
+            return false;
+        }
+        try {
+            int d = Integer.parseInt(strNum);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
     }
 }

@@ -1,5 +1,6 @@
 package com.github.dgc08.snake;
 
+import com.github.dgc08.snake.Menu.ChooseDialog;
 import com.github.dgc08.snake.interaction.Direction;
 import com.github.dgc08.snake.interaction.getDirection;
 
@@ -23,7 +24,7 @@ public class MainPanel extends JPanel implements ActionListener {
     private int[] y = new int[Util.WIDTH*HEIGHT / Util.IMAGE_SIZE * Util.IMAGE_SIZE];
 
     public static Direction direction = Direction.NORTH;
-    private Timer t;
+    public Timer t;
 
     private boolean gameIsRunning;
 
@@ -54,7 +55,7 @@ public class MainPanel extends JPanel implements ActionListener {
         setFocusable(true);
         setBackground(Color.DARK_GRAY );
 
-        t = new Timer(Util.difficulty, this);
+        t = new Timer(ChooseDialog.difficulty, this);
         
         initGame();
     }
@@ -138,6 +139,7 @@ public class MainPanel extends JPanel implements ActionListener {
     }
 
     public void restart() {
+        direction = Direction.NORTH;
         initGame();
     }
 }
