@@ -13,7 +13,7 @@ import java.net.URL;
 public class Author implements ActionListener {
     private static final String website = "https://github.com/dgc08/java-snake";
     private static final String aboutMsg = "This Game was written by Sinthoras39 \nCheck out the Game's GitHub Repo for Updates and more: " + website + "\n\nShould this Website be opened?";
-    public static final String version = "0.0.0";
+    public static final String version = "0.0.1";
 
     public static void openWebsite() {
 

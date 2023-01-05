@@ -6,14 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d481cb5-c50e-434f-bd90-947c60c0f464" name="Changes" comment="Bug fixes, Recource Management, Design Changes">
-      <change afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/Menu/ChooseDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/Menu/FlowLayoutWrapper.java" afterDir="false" />
+    <list default="true" id="4d481cb5-c50e-434f-bd90-947c60c0f464" name="Changes" comment="Game menu, pause with space, kill yourself with K, difficulty chooser (smaller number = higher difficulty (= tickrate))">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/dgc08/snake/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/MainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/dgc08/snake/Menu/FileMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/Menu/FileMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/dgc08/snake/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/dgc08/snake/interaction/getDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/dgc08/snake/interaction/getDirection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672847881053</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Game menu, pause with space, kill yourself with K, difficulty chooser (smaller number = higher difficulty (= tickrate))">
+      <created>1672931280821</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672931280821</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +182,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Project structure" />
     <MESSAGE value="Bug fixes, Recource Management, Design Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes, Recource Management, Design Changes" />
+    <MESSAGE value="Game menu, pause with space, kill yourself with K, difficulty chooser (smaller number = higher difficulty (= tickrate))" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game menu, pause with space, kill yourself with K, difficulty chooser (smaller number = higher difficulty (= tickrate))" />
   </component>
 </project>
